@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Righteous&display=swap');
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-content">
+            <h1 class="logo"><a href="index.html">RPC <span>STORE</span></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Minha conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon">
+            <a class="open-cart"><img src="images/cart.png" alt=""></a>
+                <img src="images/menu.png" alt="" class="menu-btn">
+            </div>
+        </div>
+    </div>
+
+<div class="cart-overlay">
+    <div class="cart">
+        <button class="close-cart">&times;</button>
+        <h2>Meu Carrinho</h2>
+        <div class="cart-content"></div>
+        <div class="cart-footer">
+            <h3>Total: <span class="cart-total">R$0,00</span></h3>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+</div>
+
+
+
+    <header>
+        <div class="header-content">
+            <div class="header-principal">
+                <div class="header-lateral-esquerda">
+                    <h2>Sem lag, só vitória – Garanta já seu notebook gamer</h2>
+                    <p>Com o notebook gamer certo, você não precisa escolher entre trabalhar e jogar – faz tudo com potência e sem interrupções. Seja para aquela reunião importante ou para o game no final do dia, você tem performance de sobra, sem travar. Desempenho top o tempo todo, sem lag, só vitória em qualquer missão!</p>
+                    <button>Compre Agora &#10149;</button>
+                </div>
+                <div class="header-lateral-direita">
+                    <img src="images/notebook-alienware-m16-black-gallery-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="fundo-cinza">
+            <div class="page-content">
+                <div class="cols cols-3">
+
+                    <img src="images/products/product-1.png" alt="">
+                    <img src="images/products/product-2.png" alt="">
+                    <img src="images/products/product-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="page-content">
+                <h3 class="titulo-section">Produtos Mais Elogiados</h3>
+                <div class="subtitulo"></div>
+                <div class="cols cols-4">
+                    <div class="produto">
+                        <img src="images/products/product-4.png" alt="">
+                        <p class="nome-produto">Kit Gamer Meetion</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$149,00</p>
+                    </div>
+
+                    <div class="produto" href="#">
+                        <img src="images/products/product-5.png" alt="">
+                        <p class="nome-produto">GTX 1650 - VENTUS XS 4GB</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$899,00</p>
+                    </div>
+    
+                    <div class="produto">
+                        <img src="images/products/product-6.png" alt="">
+                        <p class="nome-produto">Dualshock 5</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$499,00</p>
+                    </div>
+    
+                    <div class="produto">
+                        <img src="images/products/product-7.png" alt="">
+                        <p class="nome-produto">Cadeira Gamer</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$799,00</p>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="payment-modal-overlay">
+    <div class="payment-modal">
+        <span class="close-modal">&times;</span>
+        <h2>Detalhes de Pagamento</h2>
+
+        <div class="total-container">
+            <p><strong>Total:</strong> R$<span id="total-price">0,00</span></p>
+        </div>
+
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-number">Número do Cartão</label>
+                <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" required />
+            </div>
+            <div class="form-group">
+                <label for="card-name">Nome no Cartão</label>
+                <input type="text" id="card-name" placeholder="Nome como no cartão" required />
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Data de Validade</label>
+                <input type="text" id="expiry-date" placeholder="MM/AA" required />
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="XXX" required />
+            </div>
+            <button type="submit" class="submit-payment">Confirmar Pagamento</button>
+        </form>
+    </div>
+</div>
+            <div class="page-content">
+                <h3 class="titulo-section">Em Estoque</h3>
+                <div class="subtitulo"></div>
+                <div class="cols cols-4">
+                    <div class="produto">
+                        <img src="images/products/product-8.png" alt="">
+                        <p class="nome-produto">Iphone 14 PRO MAX</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$4149,00</p>
+                        <button class="add-to-cart"><span>Adicionar ao Carrinho</span></button>
+                    </div>
+    
+                    <div class="produto">
+                        <img src="images/products/product-9.png" alt="">
+                        <p class="nome-produto">SAMSUNG GALAXY S23 ULTRA</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$3899,00</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+    
+                    <div class="produto">
+                        <img src="images/products/product-10.png" alt="">
+                        <p class="nome-produto">ASUS ROG PHONE</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$6499,00</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="images/products/product-11.png" alt="">
+                        <p class="nome-produto">XIAOMI 12S ULTRA - 5G - 256GB</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$2099,00</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="images/products/product-12.png" alt="">
+                        <p class="nome-produto">XBOX SERIES X</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$3799,00</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="images/products/product-13.png" alt="">
+                        <p class="nome-produto">Cadeira Gamer</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$799,00</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="images/products/product-14.png" alt="">
+                        <p class="nome-produto">PLAYSTATION 5</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$3799,00</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="images/products/product-15.png" alt="">
+                        <p class="nome-produto">PC GAMER - RTX 3070</p>
+                        <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="preco">R$7799,00</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="fundo-cinza">
+            <div class="header-content">
+                <div class="header-principal exclusive-container">
+                    <div class="header-lateral-esquerda">
+                        <h2>RTX 5070 Ti – Poder máximo, gráficos insanos e FPS absurdos! 🚀🔥</h2>
+                        <p>A NVIDIA GeForce RTX 5070 Ti chegou para redefinir o que você espera de uma placa de vídeo. Com a arquitetura Ada Lovelace++, mais núcleos CUDA e tecnologia DLSS 4, ela entrega um desempenho insano para gamers e criadores de conteúdo. Está pronto para elevar o nível do seu setup? A RTX 5070 Ti é a escolha perfeita para quem busca o melhor em gráficos, performance e inovação.</p>
+                        <button class="btn-rtx">Clique e Confira </button>
+                    </div>
+                    <div class="header-lateral-direita">
+                        <img src="images/RTX5070TI.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="download-content">
+            <h2>Baixe nosso App</h2>
+            <p>Baixe nosso aplicativo nas plataformas digitais</p>
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+        </div>
+
+    <div class="logo-footer">
+        <h1><a href="index.html">RPC <span>STORE</span></a><h1>
+
+    </div>
+</div>
+
+    <div class="copyright-footer">
+        <p>© Todos os direitos reservados a RPCSTORE.COM.BR</p>
+    </div>
+
+</footer>
+
+</html>
